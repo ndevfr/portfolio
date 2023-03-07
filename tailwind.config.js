@@ -1,0 +1,68 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    screens: {
+      phoneM: "375px",
+      phoneL: "425px",
+      tablet: "768px",
+      laptop: "1024px",
+      desktop: "1200px",
+    },
+    colors: {
+      navbar1: "#3444cc",
+      welcome1: "#191923",
+      projects1: "#2C8C99",
+      contacts1: "#CBBFBB",
+      color5: "#431833",
+      color6: "#BF1363",
+      white: "#FDFDFD",
+      black: "#191923",
+      topgradient: "#969696",
+      btmgradient: "#000000",
+      terminalheader: "#3F3837",
+      terminalbackground: "#1E1E1E",
+      terminalcolor: "#FFFFFF",
+      terminalcursor: "#929292",
+      terminalborder: "#4B4B4B",
+      terminalclose: "#FF6057",
+      terminalminimize: "#FEBC2E",
+      terminalmaximize: "#26C940",
+    },
+    borderWidth: {
+      DEFAULT: "1px",
+      0: "0",
+      2: "2px",
+      3: "3px",
+      4: "4px",
+      6: "6px",
+      8: "8px",
+      10: "10px",
+    },
+    borderRadius: {
+      4: "4px",
+      6: "6px",
+      none: "0",
+      sm: "0.125rem",
+      DEFAULT: "0.25rem",
+      DEFAULT: "4px",
+      md: "0.375rem",
+      lg: "0.5rem",
+      full: "9999px",
+      large: "12px",
+    },
+    extend: {
+      animation: {
+        mybounce: "bounce 0.5s ease infinite alternate",
+      },
+      keyframes: {
+        mybounce: {
+          "0%": { bottom: "40px" },
+          "50%": { bottom: "60px" },
+          "100%": { bottom: "40px" },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
