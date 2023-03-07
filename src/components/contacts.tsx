@@ -11,7 +11,7 @@ const SocialLink = (props: SocialLinkProps) => {
         target="blank"
         className="flex items-center relative text-sm phoneM:text-lg phoneL:text-xl tablet:text-3xl laptop:text-4xl desktop:text-5xl hover:-translate-y-2 transition-transform"
       >
-        <props.icon /> {props.title}
+        <props.icon /> <span className="ml-[0.2em]">{props.title}</span>
       </a>
     </li>
   );
