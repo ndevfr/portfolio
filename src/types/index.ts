@@ -1,28 +1,29 @@
 // types/index.ts
 
-import { IconType } from "react-icons";
+export type StaticProps = {
+  websites: ProjectProps[];
+  projects: ProjectProps[];
+};
 
-export interface ProjectTileProps {
-  id: string;
+export type WebsitesProps = {
+  websites: ProjectProps[];
+};
+
+export type ProjectProps = {
+  content?: string;
+  slug: string;
   title: string;
   description: string;
+  link: string;
+  message: string;
+  startDate: string;
+  endDate: string;
+  tags: string[];
+  source: string;
+  folder: string;
+};
+
+export type ProjectLinkProps = {
   href: string;
   alert: string;
-  capture: string;
-  start: string;
-  end: string;
-  labels: string[];
-  story: string;
-}
-
-export interface ProjectLinkProps {
-  href: string;
-  alert: string;
-}
-
-export interface SocialLinkProps {
-  id: string;
-  title: string;
-  href: string;
-  icon: IconType;
-}
+};
