@@ -15,7 +15,7 @@ export const Lockee = () => {
         "desktop:text-5xl"
       )}
     >
-      <WaveTop1 className="text-black" />
+      <WaveTop1 className="fill-welcome1" />
       <div
         className={clsx(
           "container mx-auto flex flex-col items-center justify-center py-4",
@@ -80,7 +80,7 @@ export const Lockee = () => {
           </div>
         </div>
       </div>
-      <WaveBottom1 className="text-projects1" />
+      <WaveBottom1 className="fill-projects1" />
     </section>
   );
 };

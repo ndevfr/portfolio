@@ -189,7 +189,7 @@ export const Projects = (props: StaticProps) => {
           )}
         </div>
       </div>
-      <WaveBottom2 className="text-contacts1" />
+      <WaveBottom2 className="fill-contacts1" />
     </section>
   );
 };
