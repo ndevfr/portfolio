@@ -81,8 +81,8 @@ export const Carousel = ({ timer, elements, className }: CarouselProps) => {
       <Image
         src={"/lockee/" + element.image}
         className="block w-full"
-        width="1500"
-        height="1000"
+        width="800"
+        height="533"
         alt={element.alt}
       />
       <div

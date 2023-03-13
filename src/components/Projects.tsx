@@ -29,8 +29,8 @@ const ProjectTile = (props: ProjectProps) => {
         <Image
           src={"/captures/" + props.slug + ".png"}
           alt={props.title}
-          width="1500"
-          height="1000"
+          width="600"
+          height="400"
           className={clsx("rounded-t-4")}
         />
         <div

@@ -68,8 +68,8 @@ const Project = (props) => {
                   <Image
                     src={"/captures/" + props.slug + ".png"}
                     alt=""
-                    width="1500"
-                    height="1000"
+                    width="640"
+                    height="427"
                     className={clsx("border-2 border-black rounded-6")}
                   />
                 </div>
