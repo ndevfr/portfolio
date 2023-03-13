@@ -42,8 +42,8 @@ export const Navbar = () => {
             <div className={clsx("tablet:hidden")}>
               <button
                 className={clsx(
-                  "p-2 text-gray-700 rounded-md outline-none",
-                  "focus:border-gray-400 focus:border"
+                  "p-2 text-white rounded-md outline-none",
+                  "focus:border-white focus:border"
                 )}
                 onClick={toggleNavbar}
               >

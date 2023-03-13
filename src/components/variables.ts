@@ -7,6 +7,34 @@ export const TEXTS = [
 export const CHARS =
   "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+export const LOCKEE_SLIDES = [
+  {
+    image: "openlock.png",
+    alt: "Ouverture d'un cadenas sur Lockee.fr",
+    description: "Ouverture d'un cadenas sur Lockee.fr",
+  },
+  {
+    image: "homepage.png",
+    alt: "Page d'accueil de Lockee.fr",
+    description: "Page d'accueil de Lockee.fr",
+  },
+  {
+    image: "listlocks.png",
+    alt: "Gestion des cadenas sur Lockee.fr",
+    description: "Gestion des cadenas sur Lockee.fr",
+  },
+  {
+    image: "editlock.png",
+    alt: "Edition d'un cadenas sur Lockee.fr",
+    description: "Edition d'un cadenas sur Lockee.fr",
+  },
+  {
+    image: "viewlock.png",
+    alt: "Visualisation d'un cadenas sur Lockee.fr",
+    description: "Visualisation d'un cadenas sur Lockee.fr",
+  },
+];
+
 export const SOCIAL = [
   {
     id: "bento",

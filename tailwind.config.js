@@ -41,6 +41,7 @@ module.exports = {
       colors: {
         navbar1: "#3444cc",
         welcome1: "#191923",
+        lockee1: "#D8DBE2",
         projects1: "#2C8C99",
         projects2: "#1B5860",
         contacts1: "#CBBFBB",

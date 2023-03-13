@@ -15,8 +15,8 @@ export const Welcome = () => {
           "container flex flex-col items-center justify-center min-h-full mx-auto py-4 gap-4",
           "phoneM:gap-6",
           "phoneL:gap-8",
-          "tablet:py-8 gap-10",
-          "laptop:py-12 gap-12"
+          "tablet:py-8 tablet:gap-10",
+          "laptop:py-12 laptop:gap-12"
         )}
       >
         <h1

@@ -1,4 +1,4 @@
-import { useState, memo, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
@@ -27,10 +27,10 @@ const ProjectTile = (props: ProjectProps) => {
       >
         <Image
           src={"/captures/" + props.slug + ".png"}
-          alt=""
+          alt={props.title}
           width="1500"
           height="1000"
-          className="rounded-t-4"
+          className={clsx("rounded-t-4")}
         />
         <div
           className={clsx(

@@ -3,6 +3,7 @@ import { Lato } from "next/font/google";
 import { getAllPublished } from "@/utils/md";
 import { Navbar } from "@/components/Navbar";
 import { Welcome } from "@/components/Welcome";
+import { Lockee } from "@/components/Lockee";
 import { Projects } from "@/components/Projects";
 import { Contacts } from "@/components/Contacts";
 import { Footer } from "@/components/Footer";
@@ -25,6 +26,7 @@ export default function Home(props: StaticProps) {
           id="wrapper"
         >
           <Welcome />
+          <Lockee />
           <Projects websites={props.websites} projects={props.projects} />
           <Contacts />
           <Footer />
