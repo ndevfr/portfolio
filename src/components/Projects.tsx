@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { StaticProps, ProjectProps } from "@/types";
 import { getYear } from "@/utils/date";
 import { Button } from "./atoms/Button";
+import { WaveBottom2 } from "./atoms/Waves";
 
 const ProjectTile = (props: ProjectProps) => {
   const labelsList = props.tags.map((element, index) => (
@@ -18,7 +19,7 @@ const ProjectTile = (props: ProjectProps) => {
     </span>
   ));
   return (
-    <div className={clsx("snap-start p-4")}>
+    <div className={clsx("p-4")}>
       <Link
         href={"/" + props.folder + "/" + props.slug}
         className={clsx(
@@ -87,7 +88,7 @@ export const Projects = (props: StaticProps) => {
     <section
       id="projects"
       className={clsx(
-        "w-full min-h-full snap-start snap-always bg-projects1 text-black text-lg",
+        "w-full bg-projects1 text-black text-lg",
         "tablet:text-3xl",
         "laptop:text-4xl",
         "desktop:text-5xl"
@@ -95,7 +96,7 @@ export const Projects = (props: StaticProps) => {
     >
       <div
         className={clsx(
-          "container min-h-full mx-auto pt-4 flex flex-col items-center justify-center snap-start",
+          "container mx-auto pt-4 flex flex-col items-center justify-center",
           "tablet:pt-8",
           "laptop:pt-12"
         )}
@@ -143,7 +144,7 @@ export const Projects = (props: StaticProps) => {
       </div>
       <div
         className={clsx(
-          "container min-h-full mx-auto pt-4 flex flex-col items-center justify-center snap-start",
+          "container min-h-full mx-auto pt-4 flex flex-col items-center justify-center",
           "tablet:pt-8",
           "laptop:pt-12"
         )}
@@ -188,6 +189,7 @@ export const Projects = (props: StaticProps) => {
           )}
         </div>
       </div>
+      <WaveBottom2 className="text-contacts1" />
     </section>
   );
 };

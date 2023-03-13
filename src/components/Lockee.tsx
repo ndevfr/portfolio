@@ -2,21 +2,23 @@ import Link from "next/link";
 import clsx from "clsx";
 import { LOCKEE_SLIDES } from "./variables";
 import { Carousel } from "./atoms/Carousel";
+import { WaveBottom1, WaveTop1 } from "./atoms/Waves";
 
 export const Lockee = () => {
   return (
     <section
       id="lockee"
       className={clsx(
-        "flex items-center w-full min-h-full snap-start snap-always bg-lockee1 text-black text-lg",
+        "w-full bg-lockee1 text-black text-lg relative",
         "tablet:text-3xl",
         "laptop:text-4xl",
         "desktop:text-5xl"
       )}
     >
+      <WaveTop1 className="text-black" />
       <div
         className={clsx(
-          "container mx-auto flex flex-col items-center justify-center snap-start py-4",
+          "container mx-auto flex flex-col items-center justify-center py-4",
           "tablet:py-8",
           "laptop:py-12"
         )}
@@ -78,6 +80,7 @@ export const Lockee = () => {
           </div>
         </div>
       </div>
+      <WaveBottom1 className="text-projects1" />
     </section>
   );
 };

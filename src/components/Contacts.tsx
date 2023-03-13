@@ -8,9 +8,7 @@ export const Contacts = () => {
   return (
     <section
       id="contacts"
-      className={
-        "w-full h-[calc(100%_-_100px)] snap-start snap-always bg-contacts1 text-black"
-      }
+      className={"w-full h-[calc(100%_-_100px)] bg-contacts1 text-black"}
     >
       <div
         className={clsx(

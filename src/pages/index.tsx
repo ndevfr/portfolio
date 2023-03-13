@@ -22,7 +22,7 @@ export default function Home(props: StaticProps) {
       <div className={lato.className}>
         <Navbar />
         <div
-          className="absolute top-[84px] left-0 right-0 w-100 bottom-0 overflow-y-scroll snap-y snap-proximity"
+          className="absolute top-[84px] left-0 right-0 w-100 bottom-0 overflow-y-scroll"
           id="wrapper"
         >
           <Welcome />
