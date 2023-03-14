@@ -34,7 +34,7 @@ export const WaveBottom2 = ({ className }: WaveProps) => {
 
 export const WaveBottom3 = ({ className }: WaveProps) => {
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex w-full">
       <svg
         className={clsx("block w-full", className)}
         viewBox="0 0 1440 170"
