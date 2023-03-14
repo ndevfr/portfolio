@@ -13,7 +13,8 @@ export const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "absolute top-0 w-full bg-navbar1 text-white border-b-3 border-black py-2 z-50"
+        "absolute top-0 w-full bg-navbar1 text-white border-b-3 border-black py-2 z-50",
+        "dark:bg-darknavbar1 dark:text-darkwhite"
       )}
     >
       <div
@@ -43,7 +44,8 @@ export const Navbar = () => {
               <button
                 className={clsx(
                   "p-2 text-white rounded-md outline-none",
-                  "focus:border-white focus:border"
+                  "focus:border-white focus:border",
+                  "dark:text-darkwhite dark:focus:border-darkwhite"
                 )}
                 onClick={toggleNavbar}
               >
@@ -99,7 +101,8 @@ export const Navbar = () => {
                   <span
                     className={clsx(
                       "relative inline-block p-1",
-                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded"
+                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded",
+                      "dark:hover:bg-darkwhite dark:hover:text-darknavbar1"
                     )}
                   >
                     <span className={clsx("relative")}>À propos</span>
@@ -111,7 +114,8 @@ export const Navbar = () => {
                   <span
                     className={clsx(
                       "relative inline-block p-1",
-                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded"
+                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded",
+                      "dark:hover:bg-darkwhite dark:hover:text-darknavbar1"
                     )}
                   >
                     <span className="relative">Réalisations</span>
@@ -123,7 +127,8 @@ export const Navbar = () => {
                   <span
                     className={clsx(
                       "relative inline-block p-1",
-                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded"
+                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded",
+                      "dark:hover:bg-darkwhite dark:hover:text-darknavbar1"
                     )}
                   >
                     <span className={clsx("relative")}>Contacts</span>

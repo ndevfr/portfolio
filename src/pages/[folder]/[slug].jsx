@@ -45,7 +45,8 @@ const Project = (props) => {
           <section
             id="project"
             className={clsx(
-              "w-full min-h-[calc(100%_-_100px)] bg-projects1 text-white pb-4 px-4"
+              "w-full min-h-[calc(100%_-_100px)] bg-projects1 text-white pb-4 px-4",
+              "dark:bg-darkprojects1 dark:text-darkwhite"
             )}
           >
             <div className={clsx("container mx-auto")}>
@@ -77,7 +78,8 @@ const Project = (props) => {
                   className={clsx(
                     "text-sm bg-black text-white p-4 rounded-6 col-span-10",
                     "tablet:col-span-7 tablet:text-base",
-                    "laptop:col-span-8 laptop:text-lg"
+                    "laptop:col-span-8 laptop:text-lg",
+                    "dark:text-darkwhite"
                   )}
                 >
                   <p>
@@ -138,14 +140,16 @@ const Project = (props) => {
                 {props.content && (
                   <div
                     className={clsx(
-                      "bg-contacts1 border-2 border-black text-black p-4 rounded-6 col-span-10"
+                      "bg-contacts1 border-2 border-black text-black p-4 rounded-6 col-span-10",
+                      "dark:bg-darkcontacts1"
                     )}
                   >
                     <ReactMarkdown
                       remarkPlugins={[remarkGfm]}
                       className={clsx(
                         "prose prose-project max-w-none",
-                        "tablet:prose-lg"
+                        "tablet:prose-lg",
+                        "dark:text-darkwhite dark:prose-invert"
                       )}
                     >
                       {props.content}

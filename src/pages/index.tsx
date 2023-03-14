@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Lato } from "next/font/google";
+import clsx from "clsx";
 import { getAllPublished } from "@/utils/md";
 import { Navbar } from "@/components/Navbar";
 import { Welcome } from "@/components/Welcome";
@@ -31,11 +32,26 @@ export default function Home(props: StaticProps) {
           id="wrapper"
         >
           <Welcome />
-          <WaveBottom1 className="fill-lockee1 text-lockee1 bg-welcome1" />
+          <WaveBottom1
+            className={clsx(
+              "fill-lockee1 text-lockee1 bg-welcome1",
+              "dark:fill-darklockee1 dark:text-darklockee1 dark:bg-darkwelcome1"
+            )}
+          />
           <Lockee />
-          <WaveBottom2 className="fill-projects1 text-projects1 bg-lockee1" />
+          <WaveBottom2
+            className={clsx(
+              "fill-projects1 text-projects1 bg-lockee1",
+              "dark:fill-darkprojects1 dark:text-darkprojects1 dark:bg-darklockee1"
+            )}
+          />
           <Projects websites={props.websites} projects={props.projects} />
-          <WaveBottom3 className="fill-contacts1 text-contacts1 bg-projects1" />
+          <WaveBottom3
+            className={clsx(
+              "fill-contacts1 text-contacts1 bg-projects1",
+              "dark:fill-darkcontacts1 dark:text-darkcontacts1 dark:bg-darkprojects1"
+            )}
+          />
           <Contacts />
           <Footer />
         </div>

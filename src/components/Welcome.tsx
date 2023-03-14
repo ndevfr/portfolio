@@ -7,7 +7,8 @@ export const Welcome = () => {
     <section
       id="welcome"
       className={clsx(
-        "flex items-center w-full min-h-full bg-welcome1 text-white"
+        "flex items-center w-full min-h-full bg-welcome1 text-white",
+        "dark:bg-darkwelcome1 dark:text-darkwhite"
       )}
     >
       <div

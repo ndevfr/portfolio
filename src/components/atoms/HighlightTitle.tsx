@@ -27,13 +27,15 @@ export const HighlightTitle = ({
         "tablet:text-3xl",
         "laptop:text-4xl",
         "desktop:text-5xl py-4",
+        "dark:text-white",
         className
       )}
     >
       <span
         className={clsx(
           "absolute bottom-[1rem] -left-[0.3rem] -right-[0.3rem] h-[0.7rem] bg-highlight z-0",
-          "tablet:h-[0.8rem]"
+          "tablet:h-[0.8rem]",
+          "dark:bg-darkhighlight"
         )}
       ></span>
       <span className={clsx("relative z-10")}>{children}</span>

@@ -10,7 +10,8 @@ const ProjectTile = (props: ProjectProps) => {
   const labelsList = props.tags.map((element, index) => (
     <span
       className={clsx(
-        "text-xs px-3 py-1 rounded-full bg-black text-white border-2 border-black font-bold my-0 mx-1"
+        "text-xs px-3 py-1 rounded-full bg-black text-white border-2 border-black font-bold my-0 mx-1",
+        "dark:text-darkwhite"
       )}
       key={props.slug + "-label-" + index}
     >
@@ -41,7 +42,8 @@ const ProjectTile = (props: ProjectProps) => {
         </div>
         <p
           className={clsx(
-            "flex flex-col w-full h-[80px] bg-welcome1 text-white justify-center items-center text-base text-center"
+            "flex flex-col w-full h-[80px] bg-welcome1 text-white justify-center items-center text-base text-center",
+            "dark:text-darkwhite"
           )}
         >
           <span className={clsx("text-xl font-bold")}>{props.title}</span>
@@ -90,7 +92,8 @@ export const Projects = (props: StaticProps) => {
         "w-full bg-projects1 text-black text-lg",
         "tablet:text-3xl",
         "laptop:text-4xl",
-        "desktop:text-5xl"
+        "desktop:text-5xl",
+        "dark:bg-darkprojects1 dark:text-darkwhite"
       )}
     >
       <div
@@ -109,7 +112,8 @@ export const Projects = (props: StaticProps) => {
             "laptop:text-5xl laptop:mb-12",
             "after:absolute after:content[' '] after:-bottom-1 after:left-[10%] after:right-[10%] after:h-1 after:bg-black",
             "after:tablet:-bottom-3",
-            "after:laptop:-bottom-4 after:laptop:h-2"
+            "after:laptop:-bottom-4 after:laptop:h-2",
+            "dark:after:bg-darkwhite"
           )}
         >
           Quelques sites que j&apos;ai développés
@@ -157,7 +161,8 @@ export const Projects = (props: StaticProps) => {
             "laptop:text-5xl laptop:mb-12",
             "after:absolute after:content[' '] after:-bottom-1 after:left-[10%] after:right-[10%] after:h-1 after:bg-black",
             "after:tablet:-bottom-3",
-            "after:laptop:-bottom-4 after:laptop:h-2"
+            "after:laptop:-bottom-4 after:laptop:h-2",
+            "dark:after:bg-darkwhite"
           )}
         >
           D&apos;autres projets que j&apos;ai réalisés

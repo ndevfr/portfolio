@@ -11,7 +11,8 @@ export const Lockee = () => {
         "w-full bg-lockee1 text-black text-lg relative",
         "tablet:text-3xl",
         "laptop:text-4xl",
-        "desktop:text-5xl"
+        "desktop:text-5xl",
+        "dark:bg-darklockee1 dark:text-darkwhite"
       )}
     >
       <div
@@ -30,7 +31,8 @@ export const Lockee = () => {
             "laptop:text-5xl laptop:mb-10",
             "after:absolute after:content[' '] after:-bottom-1 after:left-[10%] after:right-[10%] after:h-1 after:bg-black",
             "after:tablet:-bottom-3",
-            "after:laptop:-bottom-4 after:laptop:h-2"
+            "after:laptop:-bottom-4 after:laptop:h-2",
+            "dark:after:bg-darkwhite"
           )}
         >
           Créateur de Lockee.fr
