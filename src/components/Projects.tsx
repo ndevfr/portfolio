@@ -137,7 +137,7 @@ export const Projects = (props: StaticProps) => {
             >
               <Button
                 onClick={displayMoreWebsites}
-                className={clsx("bg-projects2 text-xl")}
+                className={clsx("bg-projects2 text-sm", "tablet:text-xl")}
               >
                 Afficher plus...
               </Button>
@@ -185,7 +185,7 @@ export const Projects = (props: StaticProps) => {
             >
               <Button
                 onClick={displayMoreProjects}
-                className={clsx("bg-projects2 text-xl")}
+                className={clsx("bg-projects2 text-sm", "tablet:text-xl")}
               >
                 Afficher plus...
               </Button>
