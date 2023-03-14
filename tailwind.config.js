@@ -54,7 +54,7 @@ module.exports = {
         color5: "#431833",
         color6: "#BF1363",
         white: "#FDFDFD",
-        darkwhite: "rgba(255, 255, 255, 0.8)",
+        darkwhite: "rgba(253, 253, 253, 0.9)",
         black: "#191923",
         topgradient: "#969696",
         btmgradient: "#000000",
