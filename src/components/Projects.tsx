@@ -26,16 +26,18 @@ const ProjectTile = (props: ProjectProps) => {
           "block relative drop-shadow-md border-2 border-black rounded-6 cursor-pointer"
         )}
       >
-        <Image
-          src={"/captures/" + props.slug + ".png"}
-          alt={props.title}
-          width="600"
-          height="400"
-          className={clsx("rounded-t-4")}
-          sizes="(max-width: 768px) 100vw,
-                (max-width: 1024px) 50vw,
-                33vw"
-        />
+        <div className="block relative">
+          <Image
+            src={"/captures/" + props.slug + ".png"}
+            alt={props.title}
+            className={clsx("rounded-t-4")}
+            width={1500}
+            height={1000}
+            sizes="(max-width: 425px) 339px, (max-width: 768px) 389px,
+                (max-width: 1024px) 348px, (max-width: 1200px) 305px, (max-width: 1440px) 364px,
+                444px"
+          />
+        </div>
         <div
           className={clsx(
             "flex flex-wrap absolute justify-center items-end w-full h-[80px] bottom-[80px] pb-[10px] bg-gradient-to-b from-topgradient/0 to-btmgradient/80"
@@ -124,7 +126,7 @@ export const Projects = (props: StaticProps) => {
 
         <div
           className={clsx(
-            "grid grid-cols-1",
+            "w-full grid grid-cols-1",
             "tablet:grid-cols-2",
             "laptop:grid-cols-3"
           )}
@@ -172,7 +174,7 @@ export const Projects = (props: StaticProps) => {
         </h1>
         <div
           className={clsx(
-            "grid grid-cols-1 pb-[50px]",
+            "w-full grid grid-cols-1 pb-[50px]",
             "tablet:grid-cols-2",
             "laptop:grid-cols-3"
           )}
