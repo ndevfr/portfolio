@@ -1,6 +1,6 @@
 ---
 title: Chess Clock
-description: Utiliser un portable comme horloge d'échecs
+description: Simuler une horloge d'échecs
 link: https://www.desmaths.fr/chessclock/
 message:
 startDate: 2021.2
