@@ -7,6 +7,11 @@ import { Lockee } from "@/components/Lockee";
 import { Projects } from "@/components/Projects";
 import { Contacts } from "@/components/Contacts";
 import { Footer } from "@/components/Footer";
+import {
+  WaveBottom1,
+  WaveBottom2,
+  WaveBottom3,
+} from "@/components/atoms/Waves";
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 import { StaticProps } from "@/types";
 
@@ -26,8 +31,11 @@ export default function Home(props: StaticProps) {
           id="wrapper"
         >
           <Welcome />
+          <WaveBottom1 className="fill-lockee1 text-lockee1 bg-welcome1" />
           <Lockee />
+          <WaveBottom2 className="fill-projects1 text-projects1 bg-lockee1" />
           <Projects websites={props.websites} projects={props.projects} />
+          <WaveBottom3 className="fill-contacts1 text-contacts1 bg-projects1" />
           <Contacts />
           <Footer />
         </div>

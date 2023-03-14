@@ -2,7 +2,6 @@ import Link from "next/link";
 import clsx from "clsx";
 import { LOCKEE_SLIDES } from "./variables";
 import { Carousel } from "./atoms/Carousel";
-import { WaveBottom1, WaveTop1 } from "./atoms/Waves";
 
 export const Lockee = () => {
   return (
@@ -15,7 +14,6 @@ export const Lockee = () => {
         "desktop:text-5xl"
       )}
     >
-      <WaveTop1 className="fill-welcome1" />
       <div
         className={clsx(
           "container mx-auto flex flex-col items-center justify-center py-4",
@@ -80,7 +78,6 @@ export const Lockee = () => {
           </div>
         </div>
       </div>
-      <WaveBottom1 className="fill-projects1" />
     </section>
   );
 };

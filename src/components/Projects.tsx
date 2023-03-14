@@ -5,7 +5,6 @@ import clsx from "clsx";
 import { StaticProps, ProjectProps } from "@/types";
 import { getYear } from "@/utils/date";
 import { Button } from "./atoms/Button";
-import { WaveBottom2 } from "./atoms/Waves";
 
 const ProjectTile = (props: ProjectProps) => {
   const labelsList = props.tags.map((element, index) => (
@@ -189,7 +188,6 @@ export const Projects = (props: StaticProps) => {
           )}
         </div>
       </div>
-      <WaveBottom2 className="fill-contacts1" />
     </section>
   );
 };
