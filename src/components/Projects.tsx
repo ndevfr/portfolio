@@ -62,7 +62,7 @@ const ProjectTile = (props: ProjectProps) => {
 };
 
 export const Projects = (props: StaticProps) => {
-  const [limitWebsites, setLimitWebsites] = useState(12);
+  const [limitWebsites, setLimitWebsites] = useState(6);
   const [limitProjects, setLimitProjects] = useState(6);
 
   const websitesList = props.websites
