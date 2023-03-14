@@ -83,6 +83,7 @@ export const Carousel = ({ timer, elements, className }: CarouselProps) => {
         className="block w-full"
         width="800"
         height="533"
+        loading={index == 0 ? "eager" : "lazy"}
         alt={element.alt}
       />
       <div
