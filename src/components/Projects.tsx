@@ -32,6 +32,9 @@ const ProjectTile = (props: ProjectProps) => {
           width="600"
           height="400"
           className={clsx("rounded-t-4")}
+          sizes="(max-width: 768px) 100vw,
+                (max-width: 1024px) 50vw,
+                33vw"
         />
         <div
           className={clsx(
