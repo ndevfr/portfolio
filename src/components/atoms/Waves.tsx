@@ -2,14 +2,28 @@ import clsx from "clsx";
 
 type WaveProps = {
   className?: string;
+  design?: number;
+  forceDark?: boolean;
 };
 
-type ObliqueProps = {
-  bgColorTop?: string;
-  bgColorBottom?: string;
+export const WaveBottom = ({ className, design, forceDark }: WaveProps) => {
+  if (forceDark) {
+    return <DiagonalBottom className={className} />;
+  } else {
+    switch (design) {
+      case 1:
+        return <WaveBottom1 className={className} />;
+      case 2:
+        return <WaveBottom2 className={className} />;
+      case 3:
+        return <WaveBottom3 className={className} />;
+      default:
+        return <WaveBottom1 className={className} />;
+    }
+  }
 };
 
-export const WaveBottom1 = ({ className }: WaveProps) => {
+const WaveBottom1 = ({ className }: WaveProps) => {
   return (
     <div className="flex w-full">
       <svg
@@ -23,7 +37,7 @@ export const WaveBottom1 = ({ className }: WaveProps) => {
   );
 };
 
-export const WaveBottom2 = ({ className }: WaveProps) => {
+const WaveBottom2 = ({ className }: WaveProps) => {
   return (
     <div className="flex w-full">
       <svg
@@ -37,7 +51,7 @@ export const WaveBottom2 = ({ className }: WaveProps) => {
   );
 };
 
-export const WaveBottom3 = ({ className }: WaveProps) => {
+const WaveBottom3 = ({ className }: WaveProps) => {
   return (
     <div className="flex w-full">
       <svg
@@ -46,6 +60,20 @@ export const WaveBottom3 = ({ className }: WaveProps) => {
         preserveAspectRatio="none"
       >
         <path d="M0,32L30,48C60,64,120,96,180,96C240,96,300,64,360,64C420,64,480,96,540,117.3C600,139,660,149,720,144C780,139,840,117,900,96C960,75,1020,53,1080,48C1140,43,1200,53,1260,53.3C1320,53,1380,43,1410,37.3L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+      </svg>
+    </div>
+  );
+};
+
+const DiagonalBottom = ({ className }: WaveProps) => {
+  return (
+    <div className="flex w-full">
+      <svg
+        className={clsx("block w-full", className)}
+        viewBox="0 0 1440 100"
+        preserveAspectRatio="none"
+      >
+        <polygon points="0,100 1440,100 1440,0"></polygon>
       </svg>
     </div>
   );

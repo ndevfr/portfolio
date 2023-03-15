@@ -9,11 +9,7 @@ import { Lockee } from "@/components/Lockee";
 import { Projects } from "@/components/Projects";
 import { Contacts } from "@/components/Contacts";
 import { Footer } from "@/components/Footer";
-import {
-  WaveBottom1,
-  WaveBottom2,
-  WaveBottom3,
-} from "@/components/atoms/Waves";
+import { WaveBottom } from "@/components/atoms/Waves";
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 import { StaticProps } from "@/types";
 
@@ -54,32 +50,32 @@ export default function Home(props: StaticProps) {
           id="wrapper"
         >
           <Welcome />
-          {!forceDarkProbablyOn && (
-            <WaveBottom1
-              className={clsx(
-                "fill-lockeeL text-lockeeL bg-welcomeL",
-                "dark:fill-lockeeD dark:text-lockeeD dark:bg-welcomeD"
-              )}
-            />
-          )}
+          <WaveBottom
+            design={1}
+            forceDark={forceDarkProbablyOn}
+            className={clsx(
+              "fill-lockeeL text-lockeeL bg-welcomeL",
+              "dark:fill-lockeeD dark:text-lockeeD dark:bg-welcomeD"
+            )}
+          />
           <Lockee />
-          {!forceDarkProbablyOn && (
-            <WaveBottom2
-              className={clsx(
-                "fill-projectsL text-projectsL bg-lockeeL",
-                "dark:fill-projectsD dark:text-projectsD dark:bg-lockeeD"
-              )}
-            />
-          )}
+          <WaveBottom
+            design={2}
+            forceDark={forceDarkProbablyOn}
+            className={clsx(
+              "fill-projectsL text-projectsL bg-lockeeL",
+              "dark:fill-projectsD dark:text-projectsD dark:bg-lockeeD"
+            )}
+          />
           <Projects websites={props.websites} projects={props.projects} />
-          {!forceDarkProbablyOn && (
-            <WaveBottom3
-              className={clsx(
-                "fill-contactsL text-contactsL bg-projectsL",
-                "dark:fill-contactsD dark:text-contactsD dark:bg-projectsD"
-              )}
-            />
-          )}
+          <WaveBottom
+            design={3}
+            forceDark={forceDarkProbablyOn}
+            className={clsx(
+              "fill-contactsL text-contactsL bg-projectsL",
+              "dark:fill-contactsD dark:text-contactsD dark:bg-projectsD"
+            )}
+          />
           <Contacts />
           <Footer />
         </div>
