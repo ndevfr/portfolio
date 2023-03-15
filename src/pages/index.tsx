@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import { Lato } from "next/font/google";
 import clsx from "clsx";
@@ -17,6 +18,15 @@ const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 import { StaticProps } from "@/types";
 
 export default function Home(props: StaticProps) {
+  const [forceDarkProbablyOn, setForceDarkProbablyOn] = useState(false);
+
+  useEffect(() => {
+    if (navigator.userAgent.includes("SamsungBrowser")) {
+      setForceDarkProbablyOn(true);
+    }
+    return () => {};
+  }, []);
+
   return (
     <>
       <Head>
@@ -32,26 +42,32 @@ export default function Home(props: StaticProps) {
           id="wrapper"
         >
           <Welcome />
-          <WaveBottom1
-            className={clsx(
-              "fill-lockee1 text-lockee1 bg-welcome1",
-              "dark:fill-darklockee1 dark:text-darklockee1 dark:bg-darkwelcome1"
-            )}
-          />
+          {!forceDarkProbablyOn && (
+            <WaveBottom1
+              className={clsx(
+                "fill-lockee1 text-lockee1 bg-welcome1",
+                "dark:fill-darklockee1 dark:text-darklockee1 dark:bg-darkwelcome1"
+              )}
+            />
+          )}
           <Lockee />
-          <WaveBottom2
-            className={clsx(
-              "fill-projects1 text-projects1 bg-lockee1",
-              "dark:fill-darkprojects1 dark:text-darkprojects1 dark:bg-darklockee1"
-            )}
-          />
+          {!forceDarkProbablyOn && (
+            <WaveBottom2
+              className={clsx(
+                "fill-projects1 text-projects1 bg-lockee1",
+                "dark:fill-darkprojects1 dark:text-darkprojects1 dark:bg-darklockee1"
+              )}
+            />
+          )}
           <Projects websites={props.websites} projects={props.projects} />
-          <WaveBottom3
-            className={clsx(
-              "fill-contacts1 text-contacts1 bg-projects1",
-              "dark:fill-darkcontacts1 dark:text-darkcontacts1 dark:bg-darkprojects1"
-            )}
-          />
+          {!forceDarkProbablyOn && (
+            <WaveBottom3
+              className={clsx(
+                "fill-contacts1 text-contacts1 bg-projects1",
+                "dark:fill-darkcontacts1 dark:text-darkcontacts1 dark:bg-darkprojects1"
+              )}
+            />
+          )}
           <Contacts />
           <Footer />
         </div>
