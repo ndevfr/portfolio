@@ -113,11 +113,11 @@ export const SocialLink = ({ id, title, href, icon }: SocialLinkProps) => {
         target="blank"
         className={clsx(
           "flex items-center relative text-sm transition-transform",
-          "phoneM:text-lg",
-          "phoneL:text-xl",
-          "tablet:text-3xl",
-          "laptop:text-4xl",
-          "desktop:text-5xl",
+          "xs:text-lg",
+          "sm:text-xl",
+          "md:text-3xl",
+          "lg:text-4xl",
+          "xl:text-5xl",
           "hover:-translate-y-2"
         )}
       >

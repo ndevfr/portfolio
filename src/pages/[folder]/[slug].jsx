@@ -45,8 +45,8 @@ const Project = (props) => {
           <section
             id="project"
             className={clsx(
-              "w-full min-h-[calc(100%_-_100px)] bg-projects1 text-white pb-4 px-4",
-              "dark:bg-darkprojects1 dark:text-darkwhite"
+              "w-full min-h-[calc(100%_-_100px)] bg-projectsL text-white pb-4 px-4",
+              "dark:bg-projectsD dark:text-whiteD"
             )}
           >
             <div className={clsx("container mx-auto")}>
@@ -54,7 +54,10 @@ const Project = (props) => {
                 className={clsx("flex flex-row items-center justify-between")}
               >
                 <HighlightTitle>{props.title}</HighlightTitle>
-                <LinkButton href="/#projects" className={clsx("bg-projects2")}>
+                <LinkButton
+                  href="/#projects"
+                  className={clsx("bg-projectsbtnL", "dark:bg-projectsbtnD")}
+                >
                   Retour
                 </LinkButton>
               </div>
@@ -62,8 +65,8 @@ const Project = (props) => {
                 <div
                   className={clsx(
                     "col-span-10",
-                    "tablet:col-span-3",
-                    "laptop:col-span-2"
+                    "md:col-span-3",
+                    "lg:col-span-2"
                   )}
                 >
                   <Image
@@ -77,9 +80,9 @@ const Project = (props) => {
                 <div
                   className={clsx(
                     "text-sm bg-black text-white p-4 rounded-6 col-span-10",
-                    "tablet:col-span-7 tablet:text-base",
-                    "laptop:col-span-8 laptop:text-lg",
-                    "dark:text-darkwhite"
+                    "md:col-span-7 md:text-base",
+                    "lg:col-span-8 lg:text-lg",
+                    "dark:text-whiteD"
                   )}
                 >
                   <p>
@@ -140,16 +143,16 @@ const Project = (props) => {
                 {props.content && (
                   <div
                     className={clsx(
-                      "bg-contacts1 border-2 border-black text-black p-4 rounded-6 col-span-10",
-                      "dark:bg-darkcontacts1"
+                      "bg-contactsL border-2 border-black text-black p-4 rounded-6 col-span-10",
+                      "dark:bg-contactsD"
                     )}
                   >
                     <ReactMarkdown
                       remarkPlugins={[remarkGfm]}
                       className={clsx(
                         "prose prose-project max-w-none",
-                        "tablet:prose-lg",
-                        "dark:text-darkwhite dark:prose-invert"
+                        "md:prose-lg",
+                        "dark:text-whiteD dark:prose-invert"
                       )}
                     >
                       {props.content}

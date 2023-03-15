@@ -89,10 +89,10 @@ export const Carousel = ({ timer, elements, className }: CarouselProps) => {
       <div
         className={clsx(
           "flex flex-wrap absolute justify-center items-center w-full h-[calc(2em_+_30px)] pb-[20px] bottom-0 bg-btmgradient/75 text-white font-bold text-xs",
-          "phoneM:text-sm",
-          "phoneL:text-base",
-          "tablet:text-2xl",
-          "laptop:text-2xl"
+          "xs:text-sm",
+          "sm:text-base",
+          "md:text-2xl",
+          "lg:text-2xl"
         )}
       >
         <div className="text-center text-white flex flex-col items-end">

@@ -7,34 +7,35 @@ export const Welcome = () => {
     <section
       id="welcome"
       className={clsx(
-        "flex items-center w-full min-h-full bg-welcome1 text-white",
-        "dark:bg-darkwelcome1 dark:text-darkwhite"
+        "flex items-center w-full min-h-full bg-welcomeL text-white",
+        "dark:bg-welcomeD dark:text-whiteD"
       )}
     >
       <div
         className={clsx(
           "container flex flex-col items-center justify-center min-h-full mx-auto py-4 gap-4",
-          "phoneM:gap-6",
-          "phoneL:gap-8",
-          "tablet:py-8 tablet:gap-10",
-          "laptop:py-12 laptop:gap-12"
+          "xs:gap-6",
+          "sm:gap-8",
+          "md:py-8 md:gap-10",
+          "lg:py-12 lg:gap-12"
         )}
       >
         <h1
           className={clsx(
             "text-center text-xl",
-            "phoneM:text-2xl",
-            "phoneL:text-3xl",
-            "tablet:text-4xl",
-            "laptop:text-5xl",
-            "desktop:text-6xl"
+            "xs:text-2xl",
+            "sm:text-3xl",
+            "md:text-4xl",
+            "lg:text-5xl",
+            "xl:text-6xl"
           )}
         >
           Bonjour, je suis{" "}
           <span
             className={clsx(
               "relative inline-block mx-2 mt-10 p-1 text-white",
-              "before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-navbar1 before:rounded"
+              "before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-navbarL before:rounded",
+              "dark:before:bg-navbarD"
             )}
           >
             <span className={clsx("block relative text-white")}>Nicolas</span>
@@ -43,12 +44,13 @@ export const Welcome = () => {
 
         <p
           className={clsx(
-            "text-center text-navbar1 italic text-sm",
-            "phoneM:text-lg",
-            "phoneL:text-xl",
-            "tablet:text-3xl",
-            "laptop:text-4xl",
-            "desktop:text-5xl"
+            "text-center text-navbarL italic text-sm",
+            "xs:text-lg",
+            "sm:text-xl",
+            "md:text-3xl",
+            "lg:text-4xl",
+            "xl:text-5xl",
+            "dark:text-navbarD"
           )}
         >
           &lt; un développeur web passionné /&gt;
@@ -57,11 +59,11 @@ export const Welcome = () => {
         <p
           className={clsx(
             "text-center text-sm",
-            "phoneM:text-lg",
-            "phoneL:text-xl",
-            "tablet:text-2xl",
-            "laptop:text-3xl",
-            "desktop:text-4xl"
+            "xs:text-lg",
+            "sm:text-xl",
+            "md:text-2xl",
+            "lg:text-3xl",
+            "xl:text-4xl"
           )}
         >
           Scrollez vers le bas pour en savoir plus...
@@ -69,11 +71,11 @@ export const Welcome = () => {
         <p
           className={clsx(
             "animate-mybounce text-xl my-4",
-            "phoneM:text-2xl",
-            "phoneL:text-3xl",
-            "tablet:text-4xl",
-            "laptop:text-5xl",
-            "desktop:text-6xl"
+            "xs:text-2xl",
+            "sm:text-3xl",
+            "md:text-4xl",
+            "lg:text-5xl",
+            "xl:text-6xl"
           )}
         >
           <FiArrowDownCircle />

@@ -21,7 +21,11 @@ export default function Home(props: StaticProps) {
   const [forceDarkProbablyOn, setForceDarkProbablyOn] = useState(false);
 
   useEffect(() => {
-    if (navigator.userAgent.includes("SamsungBrowser")) {
+    const detectionDiv = document.querySelector("#detection")!;
+    const isAutoDark =
+      getComputedStyle(detectionDiv).backgroundColor != "rgb(255, 255, 255)";
+    const isSamsungBrowser = navigator.userAgent.includes("SamsungBrowser");
+    if (isSamsungBrowser || isAutoDark) {
       setForceDarkProbablyOn(true);
     }
     return () => {};
@@ -35,6 +39,14 @@ export default function Home(props: StaticProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div
+        id="detection"
+        style={{
+          display: "none",
+          backgroundColor: "canvas",
+          colorScheme: "light",
+        }}
+      ></div>
       <div className={lato.className}>
         <Navbar />
         <div
@@ -45,8 +57,8 @@ export default function Home(props: StaticProps) {
           {!forceDarkProbablyOn && (
             <WaveBottom1
               className={clsx(
-                "fill-lockee1 text-lockee1 bg-welcome1",
-                "dark:fill-darklockee1 dark:text-darklockee1 dark:bg-darkwelcome1"
+                "fill-lockeeL text-lockeeL bg-welcomeL",
+                "dark:fill-lockeeD dark:text-lockeeD dark:bg-welcomeD"
               )}
             />
           )}
@@ -54,8 +66,8 @@ export default function Home(props: StaticProps) {
           {!forceDarkProbablyOn && (
             <WaveBottom2
               className={clsx(
-                "fill-projects1 text-projects1 bg-lockee1",
-                "dark:fill-darkprojects1 dark:text-darkprojects1 dark:bg-darklockee1"
+                "fill-projectsL text-projectsL bg-lockeeL",
+                "dark:fill-projectsD dark:text-projectsD dark:bg-lockeeD"
               )}
             />
           )}
@@ -63,8 +75,8 @@ export default function Home(props: StaticProps) {
           {!forceDarkProbablyOn && (
             <WaveBottom3
               className={clsx(
-                "fill-contacts1 text-contacts1 bg-projects1",
-                "dark:fill-darkcontacts1 dark:text-darkcontacts1 dark:bg-darkprojects1"
+                "fill-contactsL text-contactsL bg-projectsL",
+                "dark:fill-contactsD dark:text-contactsD dark:bg-projectsD"
               )}
             />
           )}

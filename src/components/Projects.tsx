@@ -11,7 +11,7 @@ const ProjectTile = (props: ProjectProps) => {
     <span
       className={clsx(
         "text-xs px-3 py-1 rounded-full bg-black text-white border-2 border-black font-bold my-0 mx-1",
-        "dark:text-darkwhite"
+        "dark:text-whiteD"
       )}
       key={props.slug + "-label-" + index}
     >
@@ -26,9 +26,9 @@ const ProjectTile = (props: ProjectProps) => {
           "block relative drop-shadow-md border-2 border-black rounded-6 cursor-pointer"
         )}
       >
-        <div className="block relative">
+        <div className="block relative bg-welcomeL dark:bg-welcomeL">
           <Image
-            src={"/captures/" + props.slug + ".png"}
+            src={"/captures/" + props.slug + ".webp"}
             alt={props.title}
             className={clsx("rounded-t-4")}
             width={1500}
@@ -47,8 +47,8 @@ const ProjectTile = (props: ProjectProps) => {
         </div>
         <p
           className={clsx(
-            "flex flex-col w-full h-[80px] bg-welcome1 text-white justify-center items-center text-base text-center",
-            "dark:text-darkwhite"
+            "flex flex-col w-full h-[80px] bg-welcomeL text-white justify-center items-center text-base text-center",
+            "dark:bg-welcomeL dark:text-whiteD"
           )}
         >
           <span className={clsx("text-xl font-bold")}>{props.title}</span>
@@ -94,31 +94,31 @@ export const Projects = (props: StaticProps) => {
     <section
       id="projects"
       className={clsx(
-        "w-full bg-projects1 text-black text-lg",
-        "tablet:text-3xl",
-        "laptop:text-4xl",
-        "desktop:text-5xl",
-        "dark:bg-darkprojects1 dark:text-darkwhite"
+        "w-full bg-projectsL text-black text-lg",
+        "md:text-3xl",
+        "lg:text-4xl",
+        "xl:text-5xl",
+        "dark:bg-projectsD dark:text-whiteD"
       )}
     >
       <div
         className={clsx(
           "container mx-auto pt-4 flex flex-col items-center justify-center",
-          "tablet:pt-8",
-          "laptop:pt-12"
+          "md:pt-8",
+          "lg:pt-12"
         )}
       >
         <h1
           className={clsx(
             "relative text-center font-bold text-lg mb-4",
-            "phoneM:text-xl",
-            "phoneL:text-2xl",
-            "tablet:text-4xl tablet:mb-8",
-            "laptop:text-5xl laptop:mb-12",
+            "xs:text-xl",
+            "sm:text-2xl",
+            "md:text-4xl md:mb-8",
+            "lg:text-5xl lg:mb-12",
             "after:absolute after:content[' '] after:-bottom-1 after:left-[10%] after:right-[10%] after:h-1 after:bg-black",
-            "after:tablet:-bottom-3",
-            "after:laptop:-bottom-4 after:laptop:h-2",
-            "dark:after:bg-darkwhite"
+            "after:md:-bottom-3",
+            "after:lg:-bottom-4 after:lg:h-2",
+            "dark:after:bg-whiteD"
           )}
         >
           Quelques sites que j&apos;ai développés
@@ -127,22 +127,22 @@ export const Projects = (props: StaticProps) => {
         <div
           className={clsx(
             "w-full grid grid-cols-1",
-            "tablet:grid-cols-2",
-            "laptop:grid-cols-3"
+            "md:grid-cols-2",
+            "lg:grid-cols-3"
           )}
         >
           {websitesList}
           {limitWebsites < props.websites.length && (
             <div
-              className={clsx(
-                "text-center",
-                "tablet:col-span-2",
-                "laptop:col-span-3"
-              )}
+              className={clsx("text-center", "md:col-span-2", "lg:col-span-3")}
             >
               <Button
                 onClick={displayMoreWebsites}
-                className={clsx("bg-projects2 text-sm", "tablet:text-xl")}
+                className={clsx(
+                  "bg-projectsbtnL text-sm",
+                  "md:text-xl",
+                  "dark:bg-projectsbtnD"
+                )}
               >
                 Afficher plus...
               </Button>
@@ -153,21 +153,21 @@ export const Projects = (props: StaticProps) => {
       <div
         className={clsx(
           "container min-h-full mx-auto pt-4 flex flex-col items-center justify-center",
-          "tablet:pt-8",
-          "laptop:pt-12"
+          "md:pt-8",
+          "lg:pt-12"
         )}
       >
         <h1
           className={clsx(
             "relative text-center font-bold text-lg mb-4",
-            "phoneM:text-xl",
-            "phoneL:text-2xl",
-            "tablet:text-4xl tablet:mb-8",
-            "laptop:text-5xl laptop:mb-12",
+            "xs:text-xl",
+            "sm:text-2xl",
+            "md:text-4xl md:mb-8",
+            "lg:text-5xl lg:mb-12",
             "after:absolute after:content[' '] after:-bottom-1 after:left-[10%] after:right-[10%] after:h-1 after:bg-black",
-            "after:tablet:-bottom-3",
-            "after:laptop:-bottom-4 after:laptop:h-2",
-            "dark:after:bg-darkwhite"
+            "after:md:-bottom-3",
+            "after:lg:-bottom-4 after:lg:h-2",
+            "dark:after:bg-whiteD"
           )}
         >
           D&apos;autres projets que j&apos;ai réalisés
@@ -175,22 +175,22 @@ export const Projects = (props: StaticProps) => {
         <div
           className={clsx(
             "w-full grid grid-cols-1 pb-[50px]",
-            "tablet:grid-cols-2",
-            "laptop:grid-cols-3"
+            "md:grid-cols-2",
+            "lg:grid-cols-3"
           )}
         >
           {projectsList}
           {limitProjects < props.projects.length && (
             <div
-              className={clsx(
-                "text-center",
-                "tablet:col-span-2",
-                "laptop:col-span-3"
-              )}
+              className={clsx("text-center", "md:col-span-2", "lg:col-span-3")}
             >
               <Button
                 onClick={displayMoreProjects}
-                className={clsx("bg-projects2 text-sm", "tablet:text-xl")}
+                className={clsx(
+                  "bg-projectsbtnL text-sm",
+                  "md:text-xl",
+                  "dark:bg-projectsbtnD"
+                )}
               >
                 Afficher plus...
               </Button>

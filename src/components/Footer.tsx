@@ -5,14 +5,14 @@ export const Footer = () => {
     <footer
       id="footer"
       className={clsx(
-        "h-[100px] w-full bg-welcome1 text-contacts1",
-        "dark:bg-darkwelcome1 dark:text-darkcontacts1"
+        "h-[100px] w-full bg-welcomeL text-contactsL",
+        "dark:bg-welcomeD dark:text-contactsD"
       )}
     >
       <div
         className={clsx(
           "flex flex-col items-end justify-center min-h-full container mx-auto px-4 text-base",
-          "tablet:text-lg"
+          "md:text-lg"
         )}
       >
         <p>© Copyright 2023 ndev.fr</p>

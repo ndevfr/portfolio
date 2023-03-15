@@ -13,22 +13,19 @@ export const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "absolute top-0 w-full bg-navbar1 text-white border-b-3 border-black py-2 z-50",
-        "dark:bg-darknavbar1 dark:text-darkwhite"
+        "absolute top-0 w-full bg-navbarL text-white border-b-3 border-black py-2 z-50",
+        "dark:bg-navbarD dark:text-whiteD"
       )}
     >
       <div
         className={clsx(
           "container justify-between mx-auto overflow-hidden px-4",
-          "tablet:items-center tablet:flex"
+          "md:items-center md:flex"
         )}
       >
         <div>
           <div
-            className={clsx(
-              "flex items-center justify-between",
-              "tablet:block"
-            )}
+            className={clsx("flex items-center justify-between", "md:block")}
           >
             <Link href="/" title="NDev.fr">
               <Image
@@ -40,12 +37,12 @@ export const Navbar = () => {
                 priority
               />
             </Link>
-            <div className={clsx("tablet:hidden")}>
+            <div className={clsx("md:hidden")}>
               <button
                 className={clsx(
                   "p-2 text-white rounded-md outline-none",
                   "focus:border-white focus:border",
-                  "dark:text-darkwhite dark:focus:border-darkwhite"
+                  "dark:text-whiteD dark:focus:border-whiteD"
                 )}
                 onClick={toggleNavbar}
               >
@@ -86,14 +83,14 @@ export const Navbar = () => {
           <div
             className={clsx(
               "flex-1 justify-self-center pb-3 mt-8",
-              "tablet:block tablet:pb-0 tablet:mt-0",
+              "md:block md:pb-0 md:mt-0",
               { block: navbar, hidden: !navbar }
             )}
           >
             <ul
               className={clsx(
                 "items-center justify-center space-y-8",
-                "tablet:flex tablet:space-x-6 tablet:space-y-0 text-xl"
+                "md:flex md:space-x-6 md:space-y-0 text-xl"
               )}
             >
               <li className={clsx("m-2 font-semibold text-center")}>
@@ -101,8 +98,8 @@ export const Navbar = () => {
                   <span
                     className={clsx(
                       "relative inline-block p-1",
-                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded",
-                      "dark:hover:bg-darkwhite dark:hover:text-darknavbar1"
+                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbarL hover:before:rounded",
+                      "dark:hover:bg-whiteD dark:hover:text-navbarD"
                     )}
                   >
                     <span className={clsx("relative")}>À propos</span>
@@ -114,8 +111,8 @@ export const Navbar = () => {
                   <span
                     className={clsx(
                       "relative inline-block p-1",
-                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded",
-                      "dark:hover:bg-darkwhite dark:hover:text-darknavbar1"
+                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbarL hover:before:rounded",
+                      "dark:hover:bg-whiteD dark:hover:text-navbarD"
                     )}
                   >
                     <span className="relative">Réalisations</span>
@@ -127,8 +124,8 @@ export const Navbar = () => {
                   <span
                     className={clsx(
                       "relative inline-block p-1",
-                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded",
-                      "dark:hover:bg-darkwhite dark:hover:text-darknavbar1"
+                      "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbarL hover:before:rounded",
+                      "dark:hover:bg-whiteD dark:hover:text-navbarD"
                     )}
                   >
                     <span className={clsx("relative")}>Contacts</span>
@@ -145,7 +142,7 @@ export const Navbar = () => {
 
 export const NavbarMy = () => {
   return (
-    <section className={clsx("bg-navbar1 text-white border-b-3 border-black")}>
+    <section className={clsx("bg-navbarL text-white border-b-3 border-black")}>
       <div className={clsx("container mx-auto overflow-hidden")}>
         <div className={clsx("flex items-center justify-between py-2")}>
           <div className={clsx("w-auto")}>
@@ -169,7 +166,7 @@ export const NavbarMy = () => {
             type="button"
             className={clsx(
               "inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg",
-              "tablet:hidden",
+              "md:hidden",
               "hover:bg-gray-100",
               "focus:outline-none focus:ring-2 focus:ring-gray-200",
               "dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -194,16 +191,16 @@ export const NavbarMy = () => {
           </button>
           <div
             id="navbar-default"
-            className={clsx("hidden w-full", "tablet:block tablet:w-auto")}
+            className={clsx("hidden w-full", "md:block md:w-auto")}
           >
             <div className={clsx("flex flex-wrap items-center")}>
               <div className={clsx("w-auto")}>
                 <ul
                   className={clsx(
                     "flex items-center text-xs",
-                    "phoneM:text-base",
-                    "phoneL:text-lg",
-                    "tablet:text-xl"
+                    "xs:text-base",
+                    "sm:text-lg",
+                    "md:text-xl"
                   )}
                 >
                   <li className={clsx("m-2 font-semibold")}>
@@ -211,7 +208,7 @@ export const NavbarMy = () => {
                       <span
                         className={clsx(
                           "relative inline-block p-1",
-                          "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded"
+                          "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbarL hover:before:rounded"
                         )}
                       >
                         <span className={clsx("relative")}>À propos</span>
@@ -223,7 +220,7 @@ export const NavbarMy = () => {
                       <span
                         className={clsx(
                           "relative inline-block p-1",
-                          "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded"
+                          "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbarL hover:before:rounded"
                         )}
                       >
                         <span className="relative">Réalisations</span>
@@ -235,7 +232,7 @@ export const NavbarMy = () => {
                       <span
                         className={clsx(
                           "relative inline-block p-1",
-                          "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbar1 hover:before:rounded"
+                          "hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-white hover:text-navbarL hover:before:rounded"
                         )}
                       >
                         <span className={clsx("relative")}>Contacts</span>

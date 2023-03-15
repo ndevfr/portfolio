@@ -8,31 +8,31 @@ export const Lockee = () => {
     <section
       id="lockee"
       className={clsx(
-        "w-full bg-lockee1 text-black text-lg relative",
-        "tablet:text-3xl",
-        "laptop:text-4xl",
-        "desktop:text-5xl",
-        "dark:bg-darklockee1 dark:text-darkwhite"
+        "w-full bg-lockeeL text-black text-lg relative",
+        "md:text-3xl",
+        "lg:text-4xl",
+        "xl:text-5xl",
+        "dark:bg-lockeeD dark:text-whiteD"
       )}
     >
       <div
         className={clsx(
           "container mx-auto flex flex-col items-center justify-center py-4",
-          "tablet:py-8",
-          "laptop:py-12"
+          "md:py-8",
+          "lg:py-12"
         )}
       >
         <h1
           className={clsx(
             "relative text-center font-bold text-lg mb-2",
-            "phoneM:text-xl",
-            "phoneL:text-2xl phoneL:mb-0",
-            "tablet:text-4xl tablet:mb-2",
-            "laptop:text-5xl laptop:mb-10",
+            "xs:text-xl",
+            "sm:text-2xl sm:mb-0",
+            "md:text-4xl md:mb-2",
+            "lg:text-5xl lg:mb-10",
             "after:absolute after:content[' '] after:-bottom-1 after:left-[10%] after:right-[10%] after:h-1 after:bg-black",
-            "after:tablet:-bottom-3",
-            "after:laptop:-bottom-4 after:laptop:h-2",
-            "dark:after:bg-darkwhite"
+            "after:md:-bottom-3",
+            "after:lg:-bottom-4 after:lg:h-2",
+            "dark:after:bg-whiteD"
           )}
         >
           Créateur de Lockee.fr
@@ -41,8 +41,8 @@ export const Lockee = () => {
           <div
             className={clsx(
               "text-lg px-4 py-4 snap-start max-w-[min(90vh,_600px)] mx-auto",
-              "tablet:text-xl tablet:py-6",
-              "laptop:text-2xl laptop:py-8 laptop:order-2 laptop:w-[350px] laptop:items-center laptop:flex laptop:justify-center"
+              "md:text-xl md:py-6",
+              "lg:text-2xl lg:py-8 lg:order-2 lg:w-[350px] lg:items-center lg:flex lg:justify-center"
             )}
           >
             <p>
@@ -67,14 +67,14 @@ export const Lockee = () => {
               ). De nombreux types de cadenas sont disponibles.
             </p>
           </div>
-          <div className={clsx("p-4 snap-start mx-auto", "desktop:order-1")}>
+          <div className={clsx("p-4 snap-start mx-auto", "xl:order-1")}>
             <Carousel
               timer={5}
               elements={LOCKEE_SLIDES}
               className={clsx(
                 "max-w-[min(90vh,_600px)]",
-                "laptop:w-[600px]",
-                "desktop:w-[800px] desktop:max-w-[min(90vh,_800px)]"
+                "lg:w-[600px]",
+                "xl:w-[800px] xl:max-w-[min(90vh,_800px)]"
               )}
             />
           </div>

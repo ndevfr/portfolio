@@ -9,27 +9,27 @@ export const CHARS =
 
 export const LOCKEE_SLIDES = [
   {
-    image: "openlock.png",
+    image: "openlock.webp",
     alt: "Ouverture d'un cadenas sur Lockee.fr",
     description: "Ouverture d'un cadenas sur Lockee.fr",
   },
   {
-    image: "homepage.png",
+    image: "homepage.webp",
     alt: "Page d'accueil de Lockee.fr",
     description: "Page d'accueil de Lockee.fr",
   },
   {
-    image: "listlocks.png",
+    image: "listlocks.webp",
     alt: "Gestion des cadenas sur Lockee.fr",
     description: "Gestion des cadenas sur Lockee.fr",
   },
   {
-    image: "editlock.png",
+    image: "editlock.webp",
     alt: "Edition d'un cadenas sur Lockee.fr",
     description: "Edition d'un cadenas sur Lockee.fr",
   },
   {
-    image: "viewlock.png",
+    image: "viewlock.webp",
     alt: "Visualisation d'un cadenas sur Lockee.fr",
     description: "Visualisation d'un cadenas sur Lockee.fr",
   },

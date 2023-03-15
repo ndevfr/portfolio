@@ -22,11 +22,11 @@ export const HighlightTitle = ({
     <h1
       className={clsx(
         "inline-block relative text-black mx-[0.3rem] text-left font-bold text-lg",
-        "phoneM:text-xl",
-        "phoneL:text-2xl",
-        "tablet:text-3xl",
-        "laptop:text-4xl",
-        "desktop:text-5xl py-4",
+        "xs:text-xl",
+        "sm:text-2xl",
+        "md:text-3xl",
+        "lg:text-4xl",
+        "xl:text-5xl py-4",
         "dark:text-white",
         className
       )}
@@ -34,7 +34,7 @@ export const HighlightTitle = ({
       <span
         className={clsx(
           "absolute bottom-[1rem] -left-[0.3rem] -right-[0.3rem] h-[0.7rem] bg-highlight z-0",
-          "tablet:h-[0.8rem]",
+          "md:h-[0.8rem]",
           "dark:bg-darkhighlight"
         )}
       ></span>

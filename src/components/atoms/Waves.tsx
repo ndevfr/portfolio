@@ -4,6 +4,11 @@ type WaveProps = {
   className?: string;
 };
 
+type ObliqueProps = {
+  bgColorTop?: string;
+  bgColorBottom?: string;
+};
+
 export const WaveBottom1 = ({ className }: WaveProps) => {
   return (
     <div className="flex w-full">

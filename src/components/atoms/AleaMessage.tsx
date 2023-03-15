@@ -102,7 +102,7 @@ export const AleaMessage = () => {
           onClick={handleClickPause}
           title={pause ? "Réactiver l'animation" : "Désactiver l'animation"}
           className={clsx(
-            "h-[14px] w-[14px] rounded-full bg-terminalminimize cursor-pointer"
+            "h-[14px] w-[14px] rounded-full bg-terminalmini cursor-pointer"
           )}
         ></div>
         <div
@@ -113,7 +113,7 @@ export const AleaMessage = () => {
               : "Retourner au premier message"
           }
           className={clsx(
-            "h-[14px] w-[14px] rounded-full bg-terminalmaximize cursor-pointer"
+            "h-[14px] w-[14px] rounded-full bg-terminalmaxi cursor-pointer"
           )}
         ></div>
       </div>
@@ -121,14 +121,14 @@ export const AleaMessage = () => {
         <div
           className={clsx(
             "font-mono text-xs",
-            "phoneM:text-sm",
-            "phoneL:text-base",
-            "tablet:text-lg",
-            "laptop:text-xl",
-            "desktop:text-2xl"
+            "xs:text-sm",
+            "sm:text-base",
+            "md:text-lg",
+            "lg:text-xl",
+            "xl:text-2xl"
           )}
         >
-          <span className={clsx("text-navbar1")}>ndev.fr ~ % </span>
+          <span className={clsx("text-navbarL")}>ndev.fr ~ % </span>
           {aff}
           <div
             className={clsx(
