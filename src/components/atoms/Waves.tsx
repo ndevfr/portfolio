@@ -66,17 +66,5 @@ const WaveBottom3 = ({ className }: WaveProps) => {
 };
 
 const DiagonalBottom = ({ className }: WaveProps) => {
-  return (
-    <div className="flex w-full">
-      <svg
-        className={clsx("block w-full", className)}
-        viewBox="0 0 1440 150"
-        preserveAspectRatio="none"
-      >
-        <g transform="matrix(1.12038,-0.0980209,0.0871557,0.996195,-145.025,8.99152)">
-          <rect x="65.95" y="138.686" width="1374.05" height="213.798" />
-        </g>
-      </svg>
-    </div>
-  );
+  return <></>;
 };
