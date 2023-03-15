@@ -70,10 +70,12 @@ const DiagonalBottom = ({ className }: WaveProps) => {
     <div className="flex w-full">
       <svg
         className={clsx("block w-full", className)}
-        viewBox="0 0 1440 100"
+        viewBox="0 0 1440 150"
         preserveAspectRatio="none"
       >
-        <polygon points="0,100 1440,100 1440,0"></polygon>
+        <g transform="matrix(1.12038,-0.0980209,0.0871557,0.996195,-145.025,8.99152)">
+          <rect x="65.95" y="138.686" width="1374.05" height="213.798" />
+        </g>
       </svg>
     </div>
   );
