@@ -45,6 +45,7 @@ export const Navbar = () => {
                   "dark:text-whiteD dark:focus:border-whiteD"
                 )}
                 onClick={toggleNavbar}
+                aria-label="Afficher/cacher le menu de navigation"
               >
                 {navbar ? (
                   <svg
