@@ -143,6 +143,7 @@ export const Projects = (props: StaticProps) => {
                   "md:text-xl",
                   "dark:bg-projectsbtnD"
                 )}
+                aria-label="Afficher plus de sites"
               >
                 Afficher plus...
               </Button>
@@ -191,6 +192,7 @@ export const Projects = (props: StaticProps) => {
                   "md:text-xl",
                   "dark:bg-projectsbtnD"
                 )}
+                aria-label="Afficher plus de projets"
               >
                 Afficher plus...
               </Button>
