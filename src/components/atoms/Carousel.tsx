@@ -61,7 +61,7 @@ export const Carousel = ({ timer, elements, className }: CarouselProps) => {
           "opacity-100": index + 1 === actual,
         }
       )}
-      arial-label={"Aller à la capture " + (index + 1)}
+      aria-label={"Aller à la capture " + (index + 1)}
       key={"button" + (index + 1)}
     ></button>
   ));
