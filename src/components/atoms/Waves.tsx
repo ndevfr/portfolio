@@ -1,33 +1,40 @@
 import clsx from "clsx";
 
 type WaveProps = {
-  className?: string;
   design?: number;
   forceDark?: boolean;
+  classTop: string;
+  classBottom: string;
 };
 
-export const WaveBottom = ({ className, design, forceDark }: WaveProps) => {
+export const WaveSeparator = ({
+  design,
+  forceDark,
+  classTop,
+  classBottom,
+}: WaveProps) => {
   if (forceDark) {
-    return <DiagonalBottom className={className} />;
+    classBottom = classBottom.replace(/fill-/g, "bg-");
+    return <DiagonalSeparator classTop={classTop} classBottom={classBottom} />;
   } else {
     switch (design) {
       case 1:
-        return <WaveBottom1 className={className} />;
+        return <WaveSeparator1 classTop={classTop} classBottom={classBottom} />;
       case 2:
-        return <WaveBottom2 className={className} />;
+        return <WaveSeparator2 classTop={classTop} classBottom={classBottom} />;
       case 3:
-        return <WaveBottom3 className={className} />;
+        return <WaveSeparator3 classTop={classTop} classBottom={classBottom} />;
       default:
-        return <WaveBottom1 className={className} />;
+        return <WaveSeparator1 classTop={classTop} classBottom={classBottom} />;
     }
   }
 };
 
-const WaveBottom1 = ({ className }: WaveProps) => {
+const WaveSeparator1 = ({ classTop, classBottom }: WaveProps) => {
   return (
-    <div className="flex w-full">
+    <div className={clsx("flex w-full", classTop)}>
       <svg
-        className={clsx("block w-full", className)}
+        className={clsx("block w-full", classBottom)}
         viewBox="0 0 1440 220"
         preserveAspectRatio="none"
       >
@@ -37,11 +44,11 @@ const WaveBottom1 = ({ className }: WaveProps) => {
   );
 };
 
-const WaveBottom2 = ({ className }: WaveProps) => {
+const WaveSeparator2 = ({ classTop, classBottom }: WaveProps) => {
   return (
-    <div className="flex w-full">
+    <div className={clsx("flex w-full", classTop)}>
       <svg
-        className={clsx("block w-full", className)}
+        className={clsx("block w-full", classBottom)}
         viewBox="0 0 1440 230"
         preserveAspectRatio="none"
       >
@@ -51,11 +58,11 @@ const WaveBottom2 = ({ className }: WaveProps) => {
   );
 };
 
-const WaveBottom3 = ({ className }: WaveProps) => {
+const WaveSeparator3 = ({ classTop, classBottom }: WaveProps) => {
   return (
-    <div className="flex w-full">
+    <div className={clsx("flex w-full", classTop)}>
       <svg
-        className={clsx("block w-full", className)}
+        className={clsx("block w-full", classBottom)}
         viewBox="0 0 1440 170"
         preserveAspectRatio="none"
       >
@@ -65,6 +72,10 @@ const WaveBottom3 = ({ className }: WaveProps) => {
   );
 };
 
-const DiagonalBottom = ({ className }: WaveProps) => {
-  return <></>;
+const DiagonalSeparator = ({ classTop, classBottom }: WaveProps) => {
+  return (
+    <div className={clsx("diagonal", classTop)}>
+      <div className={clsx("diagonal-inner", classBottom)}></div>
+    </div>
+  );
 };

@@ -9,7 +9,7 @@ import { Lockee } from "@/components/Lockee";
 import { Projects } from "@/components/Projects";
 import { Contacts } from "@/components/Contacts";
 import { Footer } from "@/components/Footer";
-import { WaveBottom } from "@/components/atoms/Waves";
+import { WaveSeparator } from "@/components/atoms/Waves";
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 import { StaticProps } from "@/types";
 
@@ -46,35 +46,31 @@ export default function Home(props: StaticProps) {
       <div className={lato.className}>
         <Navbar />
         <div
-          className="absolute top-[84px] left-0 right-0 w-100 bottom-0 overflow-y-scroll"
+          className={clsx(
+            "absolute top-[84px] left-0 right-0 w-100 bottom-0 overflow-y-scroll"
+          )}
           id="wrapper"
         >
           <Welcome />
-          <WaveBottom
+          <WaveSeparator
             design={1}
             forceDark={forceDarkProbablyOn}
-            className={clsx(
-              "fill-lockeeL text-lockeeL bg-welcomeL",
-              "dark:fill-lockeeD dark:text-lockeeD dark:bg-welcomeD"
-            )}
+            classTop="bg-welcomeL dark:bg-welcomeD"
+            classBottom="fill-lockeeL dark:fill-lockeeD"
           />
           <Lockee />
-          <WaveBottom
+          <WaveSeparator
             design={2}
             forceDark={forceDarkProbablyOn}
-            className={clsx(
-              "fill-projectsL text-projectsL bg-lockeeL",
-              "dark:fill-projectsD dark:text-projectsD dark:bg-lockeeD"
-            )}
+            classTop="bg-lockeeL dark:bg-lockeeD"
+            classBottom="fill-projectsL dark:fill-projectsD"
           />
           <Projects websites={props.websites} projects={props.projects} />
-          <WaveBottom
+          <WaveSeparator
             design={3}
             forceDark={forceDarkProbablyOn}
-            className={clsx(
-              "fill-contactsL text-contactsL bg-projectsL",
-              "dark:fill-contactsD dark:text-contactsD dark:bg-projectsD"
-            )}
+            classTop="bg-projectsL dark:bg-projectsD"
+            classBottom="fill-contactsL dark:fill-contactsD"
           />
           <Contacts />
           <Footer />

@@ -1,3 +1,15 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .diagonal-inner {
+    height: 16vw;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    clip-path: polygon(0 80%, 0 100%, 100% 100%, 100% 20%);
+    margin-bottom: -1px;
+  }
+}
