@@ -76,6 +76,7 @@ export const Carousel = ({ timer, elements, className }: CarouselProps) => {
         "block -translate-x-0 z-40": index + 1 === actual,
       })}
       style={{ backfaceVisibility: "hidden" }}
+      arial-label={"Aller à la capture " + index}
       key={"slide" + (index + 1)}
     >
       <Image

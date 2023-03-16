@@ -40,7 +40,7 @@ module.exports = {
         navbarD: "#2C39AF",
         welcomeL: "#191923",
         welcomeD: "#0D0D12",
-        welcomeB: "#4477ff",
+        welcomeB: "#5588ff",
         lockeeL: "#BBBBBB",
         lockeeD: "#333333",
         projectsL: "#2C8C99",
