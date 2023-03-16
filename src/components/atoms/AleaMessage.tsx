@@ -128,7 +128,7 @@ export const AleaMessage = () => {
             "xl:text-2xl"
           )}
         >
-          <span className={clsx("text-navbarL")}>ndev.fr ~ % </span>
+          <span className={clsx("text-welcomeB")}>ndev.fr ~ % </span>
           {aff}
           <div
             className={clsx(

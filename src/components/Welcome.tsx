@@ -44,13 +44,12 @@ export const Welcome = () => {
 
         <p
           className={clsx(
-            "text-center text-navbarL italic text-sm",
+            "text-center text-welcomeB italic text-sm",
             "xs:text-lg",
             "sm:text-xl",
             "md:text-3xl",
             "lg:text-4xl",
-            "xl:text-5xl",
-            "dark:text-navbarD"
+            "xl:text-5xl"
           )}
         >
           &lt; un développeur web passionné /&gt;
