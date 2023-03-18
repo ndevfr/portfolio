@@ -70,7 +70,7 @@ const Project = (props) => {
                   )}
                 >
                   <Image
-                    src={"/captures/" + props.slug + ".png"}
+                    src={"/captures/" + props.slug + ".webp"}
                     alt=""
                     width="640"
                     height="427"
