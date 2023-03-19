@@ -51,7 +51,7 @@ export const SOCIAL = [
   {
     id: "mail",
     title: "Mail",
-    href: "mailto:ndev@mailo.com",
+    href: "mailto:nicolas@ndev.fr",
     icon: "mail",
   },
 ];
