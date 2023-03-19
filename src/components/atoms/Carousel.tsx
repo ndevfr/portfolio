@@ -86,6 +86,9 @@ export const Carousel = ({ timer, elements, className }: CarouselProps) => {
         height="533"
         loading={index == 0 ? "eager" : "lazy"}
         alt={element.alt}
+        sizes="(max-width: 375px) 284px, (max-width: 425px) 339px, (max-width: 768px) 389px,
+                (max-width: 1024px) 596px, (max-width: 1200px) 596px, (max-width: 1440px) 726px,
+                726px"
       />
       <div
         className={clsx(
