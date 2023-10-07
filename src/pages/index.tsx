@@ -62,14 +62,14 @@ export default function Home(props: StaticProps) {
           <WaveSeparator
             design={2}
             forceDark={forceDarkProbablyOn}
-            classTop="bg-lockeeL dark:bg-lockeeD"
+            classTop="bg-lockeeL dark:bg-lockeeD mb-[-1px]"
             classBottom="fill-projectsL dark:fill-projectsD"
           />
           <Projects websites={props.websites} projects={props.projects} />
           <WaveSeparator
             design={3}
             forceDark={forceDarkProbablyOn}
-            classTop="bg-projectsL dark:bg-projectsD"
+            classTop="bg-projectsL dark:bg-projectsD mb-[-1px]"
             classBottom="fill-contactsL dark:fill-contactsD"
           />
           <Contacts />
