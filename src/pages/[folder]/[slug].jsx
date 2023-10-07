@@ -38,7 +38,7 @@ const Project = (props) => {
         <Navbar />
         <div
           className={clsx(
-            "absolute top-[84px] left-0 right-0 w-100 bottom-0 overflow-y-scroll"
+            "absolute top-[70px] left-0 right-0 w-100 bottom-0 overflow-y-scroll"
           )}
           id="wrapper"
         >

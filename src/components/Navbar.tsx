@@ -31,9 +31,9 @@ export const Navbar = () => {
               <Image
                 src="/logo.png"
                 alt="NDev.fr Logo"
-                width="55"
-                height="65"
-                style={{ width: 55, height: "auto" }}
+                width="102"
+                height="30"
+                style={{ width: 102, height: 30, margin: "12px 0" }}
                 priority
               />
             </Link>
@@ -153,9 +153,9 @@ export const NavbarMy = () => {
                   <Image
                     src="/logo.png"
                     alt="NDev.fr Logo"
-                    width="55"
-                    height="65"
-                    style={{ width: 55, height: "auto" }}
+                    width="102"
+                    height="30"
+                    style={{ width: 102, height: 30, margin: "12px 0" }}
                     priority
                   />
                 </Link>
