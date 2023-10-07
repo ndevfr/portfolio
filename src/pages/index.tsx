@@ -55,7 +55,7 @@ export default function Home(props: StaticProps) {
           <WaveSeparator
             design={1}
             forceDark={forceDarkProbablyOn}
-            classTop="bg-welcomeL dark:bg-welcomeD"
+            classTop="bg-welcomeL dark:bg-welcomeD mb-[-1px]"
             classBottom="fill-lockeeL dark:fill-lockeeD"
           />
           <Lockee />
