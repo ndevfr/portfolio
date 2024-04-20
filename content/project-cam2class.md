@@ -5,7 +5,7 @@ link: https://cam2class.desmaths.fr/
 message:
 startDate: 2024.1
 endDate: maintenant
-tags: ["NodeJs", "Socket.IO", "html", "css"]
+tags: ["NodeJs", "Socket.IO", "HTML", "CSS"]
 source: https://github.com/ndevfr/Cam2Class
 isPublished: true
 ---
