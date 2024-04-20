@@ -5,7 +5,7 @@ link:
 message: Lien non publié pour respecter les droits d'auteur du jeu
 startDate: 2019.2
 endDate: maintenant
-tags: ["NodeJs", "HTML", "CSS"]
+tags: ["NodeJs", "Socket.IO", "html", "css"]
 source:
 isPublished: true
 ---
