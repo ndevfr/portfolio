@@ -54,4 +54,109 @@ export const SOCIAL = [
     href: "mailto:nicolas@ndev.fr",
     icon: "mail",
   },
+  {
+    id: "cv",
+    title: "CV",
+    href: "/files/cv.pdf",
+    icon: "cv",
+  },
+];
+
+export const FRONTEND = [
+  {
+    id: "html",
+    title: "HTML5",
+    icon: "html",
+  },
+  {
+    id: "css",
+    title: "CSS3",
+    icon: "css",
+  },
+  {
+    id: "javascript",
+    title: "JavaScript",
+    icon: "javascript",
+  },
+  {
+    id: "react",
+    title: "React",
+    icon: "react",
+  },
+  {
+    id: "typescript",
+    title: "TypeScript",
+    icon: "typescript",
+  },
+  {
+    id: "bootstrap",
+    title: "Bootstrap",
+    icon: "bootstrap",
+  },
+  {
+    id: "tailwind",
+    title: "Tailwind CSS",
+    icon: "tailwind",
+  },
+  {
+    id: "sass",
+    title: "Sass",
+    icon: "sass",
+  },
+];
+
+export const BACKEND = [
+  {
+    id: "php",
+    title: "PHP",
+    icon: "php",
+  },
+  {
+    id: "mysql",
+    title: "MySQL",
+    icon: "mysql",
+  },
+  {
+    id: "laravel",
+    title: "Laravel",
+    icon: "laravel",
+  },
+  {
+    id: "nextjs",
+    title: "Next.js",
+    icon: "nextjs",
+  },
+  {
+    id: "nodejs",
+    title: "Node.js",
+    icon: "nodejs",
+  },
+];
+
+export const TOOLS = [
+  {
+    id: "vscode",
+    title: "VS Code",
+    icon: "vscode",
+  },
+  {
+    id: "git",
+    title: "Git",
+    icon: "git",
+  },
+  {
+    id: "designer",
+    title: "Affinity Designer",
+    icon: "designer",
+  },
+  {
+    id: "wordpress",
+    title: "WordPress",
+    icon: "wordpress",
+  },
+  {
+    id: "copilot",
+    title: "Github Copilot",
+    icon: "copilot",
+  },
 ];

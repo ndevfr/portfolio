@@ -24,6 +24,8 @@ export const WaveSeparator = ({
         return <WaveSeparator2 classTop={classTop} classBottom={classBottom} />;
       case 3:
         return <WaveSeparator3 classTop={classTop} classBottom={classBottom} />;
+      case 4:
+        return <WaveSeparator4 classTop={classTop} classBottom={classBottom} />;
       default:
         return <WaveSeparator1 classTop={classTop} classBottom={classBottom} />;
     }
@@ -59,6 +61,20 @@ const WaveSeparator2 = ({ classTop, classBottom }: WaveProps) => {
 };
 
 const WaveSeparator3 = ({ classTop, classBottom }: WaveProps) => {
+  return (
+    <div className={clsx("flex w-full", classTop)}>
+      <svg
+        className={clsx("block w-full", classBottom)}
+        viewBox="0 0 1440 230"
+        preserveAspectRatio="none"
+      >
+        <path d="M0,160L48,138.7C96,117,192,75,288,85.3C384,96,480,160,576,154.7C672,149,768,75,864,85.3C960,96,1056,192,1152,197.3C1248,203,1344,117,1392,74.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+  );
+};
+
+const WaveSeparator4 = ({ classTop, classBottom }: WaveProps) => {
   return (
     <div className={clsx("flex w-full", classTop)}>
       <svg

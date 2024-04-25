@@ -7,6 +7,7 @@ import { Navbar } from "@/components/Navbar";
 import { Welcome } from "@/components/Welcome";
 import { Lockee } from "@/components/Lockee";
 import { Projects } from "@/components/Projects";
+import { Technologies } from "@/components/Technologies";
 import { Contacts } from "@/components/Contacts";
 import { Footer } from "@/components/Footer";
 import { WaveSeparator } from "@/components/atoms/Waves";
@@ -70,6 +71,13 @@ export default function Home(props: StaticProps) {
             design={3}
             forceDark={forceDarkProbablyOn}
             classTop="bg-projectsL dark:bg-projectsD mb-[-1px]"
+            classBottom="fill-technologiesL dark:fill-technologiesD"
+          />
+          <Technologies />
+          <WaveSeparator
+            design={4}
+            forceDark={forceDarkProbablyOn}
+            classTop="bg-technologiesL dark:bg-technologiesD mb-[-1px]"
             classBottom="fill-contactsL dark:fill-contactsD"
           />
           <Contacts />

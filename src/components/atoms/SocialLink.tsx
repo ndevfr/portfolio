@@ -22,12 +22,10 @@ import {
   SiGitlab,
   SiPaypal,
   SiLinkedin,
+  SiBento,
 } from "react-icons/si";
-import {
-  FaPhoneSquareAlt,
-  FaEnvelopeSquare,
-  FaShareAltSquare,
-} from "react-icons/fa";
+import { FaPhoneSquareAlt, FaEnvelope, FaShareAltSquare } from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa6";
 /**
  * Simple button for the application
  *
@@ -52,9 +50,11 @@ type SocialLinkProps = {
 const SocialIcon = ({ id }: SocialIconProps) => {
   switch (id) {
     case "mail":
-      return <FaEnvelopeSquare />;
+      return <FaEnvelope />;
     case "phone":
       return <FaPhoneSquareAlt />;
+    case "cv":
+      return <FaFilePdf />;
     case "github":
       return <SiGithub />;
     case "linkedin":
@@ -99,6 +99,8 @@ const SocialIcon = ({ id }: SocialIconProps) => {
       return <SiGitlab />;
     case "paypal":
       return <SiPaypal />;
+    case "bento":
+      return <SiBento />;
     default:
       return <FaShareAltSquare />;
   }

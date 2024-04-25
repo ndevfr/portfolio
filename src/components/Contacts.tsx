@@ -9,7 +9,7 @@ export const Contacts = () => {
     <section
       id="contacts"
       className={clsx(
-        "w-full h-[calc(100%_-_100px)] bg-contactsL text-black",
+        "w-full h-[calc(100%_-_100px)] bg-contactsL text-white",
         "dark:bg-contactsD dark:text-whiteD"
       )}
     >
@@ -49,7 +49,13 @@ export const Contacts = () => {
             N&apos;hésitez pas à me contacter...
           </p>
         </div>
-        <ul className={clsx("flex flex-row gap-6", "md:gap-10", "xl:gap-14")}>
+        <ul
+          className={clsx(
+            "flex flex-row gap-6 flex-wrap justify-center",
+            "md:gap-10",
+            "xl:gap-14"
+          )}
+        >
           {socialList}
         </ul>
       </div>

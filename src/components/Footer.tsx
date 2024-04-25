@@ -5,8 +5,8 @@ export const Footer = () => {
     <footer
       id="footer"
       className={clsx(
-        "h-[100px] w-full bg-welcomeL text-contactsL",
-        "dark:bg-welcomeD dark:text-contactsD"
+        "h-[100px] w-full bg-welcomeL text-technologiesL",
+        "dark:bg-welcomeD dark:text-technologiesD"
       )}
     >
       <div

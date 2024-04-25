@@ -47,10 +47,10 @@ module.exports = {
         projectsD: "#133D42",
         projectsbtnL: "#1B5860",
         projectsbtnD: "#0D2C30",
-        contactsL: "#CBBFBB",
-        contactsD: "#4E413C",
-        color5: "#431833",
-        color6: "#BF1363",
+        technologiesL: "#CBBFBB",
+        technologiesD: "#4E413C",
+        contactsL: "#003f88",
+        contactsD: "#002652",
         white: "#FDFDFD",
         whiteD: "rgba(253, 253, 253, 0.9)",
         black: "#191923",
@@ -69,6 +69,7 @@ module.exports = {
       },
       animation: {
         mybounce: "bounce 0.5s ease infinite alternate",
+        skew: "skew 1s ease-in-out infinite",
       },
       keyframes: {
         mybounce: {
