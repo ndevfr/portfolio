@@ -57,7 +57,13 @@ export const Technologies = () => {
           Front-end
         </h2>
 
-        <div className={clsx("w-full flex flex-wrap justify-center")}>
+        <div
+          className={clsx(
+            "w-full flex flex-wrap justify-center text-lg",
+            "xs:text-xl",
+            "sm:text-2xl"
+          )}
+        >
           {frontendList}
         </div>
 
@@ -71,7 +77,13 @@ export const Technologies = () => {
           Back-end
         </h2>
 
-        <div className={clsx("w-full flex flex-wrap justify-center")}>
+        <div
+          className={clsx(
+            "w-full flex flex-wrap justify-center text-lg",
+            "xs:text-xl",
+            "sm:text-2xl"
+          )}
+        >
           {backendList}
         </div>
 
@@ -85,7 +97,13 @@ export const Technologies = () => {
           Outils
         </h2>
 
-        <div className={clsx("w-full flex flex-wrap justify-center")}>
+        <div
+          className={clsx(
+            "w-full flex flex-wrap justify-center text-lg",
+            "xs:text-xl",
+            "sm:text-2xl"
+          )}
+        >
           {toolsList}
         </div>
       </div>
