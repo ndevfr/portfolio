@@ -150,6 +150,11 @@ export const TOOLS = [
     icon: "designer",
   },
   {
+    id: "figma",
+    title: "Figma",
+    icon: "figma",
+  },
+  {
     id: "wordpress",
     title: "WordPress",
     icon: "wordpress",
