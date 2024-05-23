@@ -143,8 +143,8 @@ const Project = (props) => {
                 {props.content && (
                   <div
                     className={clsx(
-                      "bg-contactsL border-2 border-black text-black p-4 rounded-6 col-span-10",
-                      "dark:bg-contactsD"
+                      "bg-technologiesL border-2 border-black text-black p-4 rounded-6 col-span-10",
+                      "dark:bg-technologiesD"
                     )}
                   >
                     <ReactMarkdown
