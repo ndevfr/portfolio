@@ -1,14 +1,20 @@
 ---
-title: Lockee.fr/avent
+title: ChocoCervo.fr
 description: Calendrier de l'Avent d'énigmes
-link: https://lockee.fr/avent/
+link: https://chococervo.fr
 message:
-startDate: 2020
-endDate: 2024
-tags: ["HTML", "CSS", "JS", "PHP", "SQL"]
+startDate: 2024
+endDate: maintenant
+tags: ["Laravel", "React", "SASS", "SQL"]
 source:
 isPublished: true
 ---
+
+## Update 2024
+
+Le site a entièrement été redeveloppé sur le framework Laravel (pour améliorer la sécurité, la lisibilité et la scalabilité) en utilisant SASS (pour la gestion des feuilles de style) et React (pour l'interactivité des cadenas).
+
+Une nouvelle identité (ChocoCervo) a été inaugurée ainsi qu'un nouveau design.
 
 ## À propos
 
@@ -20,4 +26,4 @@ Depuis l'année 2021, en plus des énigmes quotidiennes, les joueurs peuvent obt
 
 Le site internet est associé à un [serveur Discord](https://discord.gg/JRGYsHKcbf) sur lequel les joueurs viennent s'entraider, discuter et remercier les différents auteurs.
 
-La page [Archives](https://lockee.fr/avent/archives/) du site permet d'accéder aux précédentes éditions pour retrouver les différentes énigmes.
+La page [Archives](https://chococervo.fr/archives/) du site permet d'accéder aux précédentes éditions pour retrouver les différentes énigmes.

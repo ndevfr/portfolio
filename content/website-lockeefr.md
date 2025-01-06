@@ -4,7 +4,7 @@ description: Plateforme de cadenas virtuels
 link: https://lockee.fr/
 message:
 startDate: 2018
-endDate: maintenant
+endDate: 2024
 tags: ["HTML", "CSS", "JS", "PHP", "SQL"]
 source:
 isPublished: true
