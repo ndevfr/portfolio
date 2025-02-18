@@ -18,6 +18,10 @@ import { FigmaIcon } from "./svgs/Figma";
 import { VscodeIcon } from "./svgs/Vscode";
 import { DesignerIcon } from "./svgs/Designer";
 import { CopilotIcon } from "./svgs/Copilot";
+import { VueIcon } from "./svgs/Vue";
+import { NuxtjsIcon } from "./svgs/Nuxtjs";
+import { MongodbIcon } from "./svgs/Mongodb";
+import { DockerIcon } from "./svgs/Docker";
 
 /**
  * Simple button for the application
@@ -79,6 +83,14 @@ const SvgIcon = ({ id }: SvgIconProps) => {
       return <DesignerIcon />;
     case "copilot":
       return <CopilotIcon />;
+    case "vue":
+      return <VueIcon />;
+    case "nuxtjs":
+      return <NuxtjsIcon />;
+    case "mongodb":
+      return <MongodbIcon />;
+    case "docker":
+      return <DockerIcon />;
     default:
       return <HtmlIcon />;
   }

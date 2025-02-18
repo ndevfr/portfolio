@@ -79,14 +79,29 @@ export const FRONTEND = [
     icon: "javascript",
   },
   {
-    id: "react",
-    title: "React",
-    icon: "react",
-  },
-  {
     id: "typescript",
     title: "TypeScript",
     icon: "typescript",
+  },
+  {
+    id: "react",
+    title: "ReactJs",
+    icon: "react",
+  },
+  {
+    id: "nextjs",
+    title: "Next.js",
+    icon: "nextjs",
+  },
+  {
+    id: "vue",
+    title: "Vue.js",
+    icon: "vue",
+  },
+  {
+    id: "nuxtjs",
+    title: "Nuxt.js",
+    icon: "nuxtjs",
   },
   {
     id: "bootstrap",
@@ -112,24 +127,24 @@ export const BACKEND = [
     icon: "php",
   },
   {
-    id: "mysql",
-    title: "MySQL",
-    icon: "mysql",
-  },
-  {
     id: "laravel",
     title: "Laravel",
     icon: "laravel",
   },
   {
-    id: "nextjs",
-    title: "Next.js",
-    icon: "nextjs",
-  },
-  {
     id: "nodejs",
     title: "Node.js",
     icon: "nodejs",
+  },
+  {
+    id: "mysql",
+    title: "MySQL",
+    icon: "mysql",
+  },
+  {
+    id: "mongodb",
+    title: "MongoDB",
+    icon: "mongodb",
   },
 ];
 
@@ -143,6 +158,11 @@ export const TOOLS = [
     id: "git",
     title: "Git",
     icon: "git",
+  },
+  {
+    id: "docker",
+    title: "Docker",
+    icon: "docker",
   },
   {
     id: "designer",
