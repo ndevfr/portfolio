@@ -29,30 +29,10 @@
  * W. https://svgartista.net
  **************************************************/
 
-  svg .svg-elem-0 {
-    opacity: 1;
-    -webkit-transition: opacity 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0s;
-    transition: opacity 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0s;
-  }
-
-  svg.active .svg-elem-0 {
-    opacity: 0;
-  }
-
-  svg .svg-elem-1 {
-    opacity: 1;
-    -webkit-transition: opacity 0s cubic-bezier(0.95, 0.05, 0.795, 0.035) 6s;
-    transition: opacity 0s cubic-bezier(0.95, 0.05, 0.795, 0.035) 6s;
-  }
-
-  svg.active .svg-elem-1 {
-    opacity: 0;
-  }
-
   svg .svg-elem-2 {
     fill: transparent;
-    -webkit-transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 1.8s;
-    transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 1.8s;
+    -webkit-transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0.3s;
+    transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0.3s;
   }
 
   svg.active .svg-elem-2 {
@@ -61,8 +41,8 @@
 
   svg .svg-elem-3 {
     fill: transparent;
-    -webkit-transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2.1s;
-    transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2.1s;
+    -webkit-transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0.6s;
+    transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0.6s;
   }
 
   svg.active .svg-elem-3 {
@@ -71,21 +51,11 @@
 
   svg .svg-elem-4 {
     fill: transparent;
-    -webkit-transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 4s;
-    transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 4s;
+    -webkit-transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0.9s;
+    transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0.9s;
   }
 
   svg.active .svg-elem-4 {
-    fill: rgb(255, 255, 255);
-  }
-
-  svg .svg-elem-5 {
-    fill: transparent;
-    -webkit-transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 4s;
-    transition: fill 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 4s;
-  }
-
-  svg.active .svg-elem-5 {
     fill: rgb(255, 255, 255);
   }
 
