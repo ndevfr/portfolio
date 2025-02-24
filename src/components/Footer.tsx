@@ -15,7 +15,7 @@ export const Footer = () => {
           "md:text-lg"
         )}
       >
-        <p>© Copyright 2023 ndev.fr</p>
+        <p>© Copyright 2025 ndev.fr</p>
       </div>
     </footer>
   );
