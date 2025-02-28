@@ -22,6 +22,7 @@ import { VueIcon } from "./svgs/Vue";
 import { NuxtjsIcon } from "./svgs/Nuxtjs";
 import { MongodbIcon } from "./svgs/Mongodb";
 import { DockerIcon } from "./svgs/Docker";
+import { SymfonyIcon } from "./svgs/Symfony";
 
 /**
  * Simple button for the application
@@ -65,6 +66,8 @@ const SvgIcon = ({ id }: SvgIconProps) => {
       return <PhpIcon />;
     case "laravel":
       return <LaravelIcon />;
+    case "symfony":
+      return <SymfonyIcon />;
     case "nodejs":
       return <NodejsIcon />;
     case "mysql":

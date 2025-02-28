@@ -132,6 +132,11 @@ export const BACKEND = [
     icon: "laravel",
   },
   {
+    id: "symfony",
+    title: "Symfony",
+    icon: "symfony",
+  },
+  {
     id: "nodejs",
     title: "Node.js",
     icon: "nodejs",
