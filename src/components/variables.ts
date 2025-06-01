@@ -57,7 +57,7 @@ export const SOCIAL = [
   {
     id: "cv",
     title: "CV",
-    href: "/files/cv.pdf",
+    href: "/fichiers/cv.pdf",
     icon: "cv",
   },
 ];

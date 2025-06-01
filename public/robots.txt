@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /files/cv.pdf
+Disallow: /fichiers/cv.pdf
